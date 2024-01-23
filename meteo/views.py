@@ -7,6 +7,7 @@ from django.template import loader
 
 
 def temp_here(request):
+    # comment
     endpoint = "https://api.open-meteo.com/v1/forecast"
     location = geocoder.ip('me').latlng
     api_request = (f"{endpoint}?latitude={location[0]}&longitude={location[1]}&hourly=temperature_2m&temperature_unit"
